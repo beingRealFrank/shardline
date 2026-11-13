@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+html, body { background: #16151d; overscroll-behavior: none; }
+body { font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+.font-serif { font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif; }
+
+@keyframes ghost-draw { 0% { stroke-dashoffset: 100; opacity: 0; } 15% { opacity: 1; } 70% { stroke-dashoffset: 0; opacity: 1; } 100% { opacity: 0; } }
+@keyframes ghost-move { 0% { transform: translate(12px, 78px); opacity: 0; } 15% { opacity: 1; } 70% { transform: translate(88px, 22px); opacity: 1; } 100% { transform: translate(88px, 22px); opacity: 0; } }
+.ghost-line { stroke-dasharray: 100; animation: ghost-draw 2.4s ease-in-out infinite; }
+.ghost-dot { animation: ghost-move 2.4s ease-in-out infinite; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.fade-in { animation: fade-in 0.4s ease-out both; }
