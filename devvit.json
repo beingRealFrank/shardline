@@ -50,5 +50,8 @@
       ]
     },
     "journeys": true
+  },
+  "dev": {
+    "subreddit": "shardline_daily_dev"
   }
 }
